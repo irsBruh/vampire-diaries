@@ -1,21 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Caramel&display=swap');
+
+
 body {
     display: flex;
-    flex-direction: row; /* элементы в строку */
+    flex-direction: row;
+    background-image: url('../img/background1.png');
+    background-size: 100%;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-/* Основной контент - занимает всё доступное пространство */
-.main-content {
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+main div {
+    display: flex;
+    width: 800px;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+main img {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+main p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    word-break: normal;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+aside {
     flex: 1;
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.sidebar {
+aside div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    order: 2; 
+    gap: 2em;
+    color: red;
+    padding: 10px 20px;
+}
+
+aside section {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+aside img {
+    transition: transform 0.1s ease-in-out;
+}
+aside img:hover {
+    transform: scale(1.1);
+}
+
+aside p, a {
+    font-family: "Caramel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    color: white;
+}
+
+.witch-text {
+    color: #611256;
+}
+
+.vampire-text {
+    color: white;
+}
+
+.werewolf-text {
+    color: #AA5C02;
+    background-color: rgba(10, 8, 8, 0.8);
+    padding: 0 15px;
+    border-radius: 15px;
+}
+
+button {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    background-color: #981313;
+    border: none;
+    border-radius: 19px;
+    padding: 7px 15px;
+}
+
+a {
+    opacity: 70%;
+    text-decoration: none;
 }

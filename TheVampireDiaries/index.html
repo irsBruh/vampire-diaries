@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vampire Diaries</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="main-content">
-        <img src="img/main.png" alt="Claus & Daemon" width="400">
-        <button>Generate mem</button>
-    </div>
-    <div class="sidebar">
-        <a>Witches</a>
-        <a>Vampires</a>
-        <a>Werewolves</a>
-    </div>
+    <main>
+        <div>
+            <img id="MainImage" src="img/main.png" alt="Claus & Daemon" width="500" height="500">
+            <p id="MainText">Сайт от крутых студентов старше 12 лет (неожиданно)</p>
+        </div>
+        <button id="Generate">Generate meme</button>
+    </main>
+    <aside>
+        <div>
+            <section>
+                <p class="witch-text">Witches</p>
+                <img id="img3" src="img/sideBonny.png" width="220">
+            </section>
+            <section>
+                <img id="img1" src="img/sideDaemon.png" width="240">
+                <p class="vampire-text">Vampires</p>
+            </section>
+            <section>
+                <p class="werewolf-text">Werewolves</p>
+                <img id="img2" src="img/sideMason.png" width="200">
+            </section>
+        </div>
+        
+        <a href="about.html">about us...</a>
+    </aside>
+    
+    <script src="generate.js"></script>
 </body>
 </html>
