@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/iphon.png');
+    background-size: 100%;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+p {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: aliceblue;
+
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+
+}
+
+
+
